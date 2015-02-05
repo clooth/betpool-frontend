@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource("player");
+  this.resource("solo-match", {path: "matches"});
 });
 
 export default Router;
